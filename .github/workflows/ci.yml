@@ -1,0 +1,19 @@
+# Managed by repokeeper (https://github.com/vannt-dev/repokeeper). Edits are reported by `repokeeper check`. Keys and jobs you add yourself are left alone.
+
+name: ci
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+permissions:
+  contents: read
+jobs:
+  commits:
+    uses: vannt-dev/repokeeper/.github/workflows/commitlint.yml@v0
+  dotnet:
+    uses: vannt-dev/repokeeper/.github/workflows/stack-dotnet.yml@v0
+    with:
+      dotnet-versions: '["8.0","9.0"]'
+      os: '["ubuntu-latest"]'
+      commands: '["dotnet restore","dotnet format --verify-no-changes --no-restore","dotnet build --no-restore","dotnet test --no-build"]'
