@@ -20,3 +20,16 @@ modules:
       - "@vannt-dev"
 owned: []
 stack_options: {}
+github:
+  description: Demo .NET solution for piloting repokeeper
+  topics: [repokeeper, dotnet, demo]
+  merge:
+    squash: true
+    merge_commit: false
+    rebase: false
+    delete_branch_on_merge: true
+  security:
+    dependabot_alerts: true
+    dependabot_security_updates: true
+  protect:
+    required_checks: ["commits / commitlint", "dotnet / dotnet (ubuntu-latest)"]
