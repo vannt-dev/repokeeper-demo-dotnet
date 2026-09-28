@@ -1,6 +1,6 @@
 {
   "lockVersion": 1,
-  "standard": "1.2.1",
+  "standard": "1.3.1",
   "entries": [
     {
       "id": "block:.gitattributes#editorconfig",
@@ -45,7 +45,7 @@
     {
       "id": "file:.github/dependabot.yml",
       "module": "deps",
-      "hash": "9aa3bdc8c67166926c3af64cf4e1131bdcd80da803d2cab9e857f3b3af16432e",
+      "hash": "10c1c2303fb9c3285be86d88b61441f965ad6bd1b0ebb07e74d0ef88428eb998",
       "target": {
         "kind": "file",
         "path": ".github/dependabot.yml"
@@ -157,6 +157,18 @@
       "target": {
         "kind": "seed",
         "path": ".release-please-manifest.json"
+      }
+    },
+    {
+      "id": "yaml:.github/workflows/ci.yml#[\"concurrency\"]",
+      "module": "ci",
+      "hash": "1f382fb1b73ab99e2883b98aae10e56692a59ccaaa72d990ff8fdae435f46cd6",
+      "target": {
+        "kind": "yaml",
+        "path": ".github/workflows/ci.yml",
+        "keyPath": [
+          "concurrency"
+        ]
       }
     },
     {
