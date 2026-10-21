@@ -187,7 +187,7 @@
     {
       "id": "yaml:.github/workflows/ci.yml#[\"jobs\",\"dotnet\"]",
       "module": "ci",
-      "hash": "40fc1be6121cd938dda7926ac3323bc3631a2deb3874e2c6122ca32c1a2dc367",
+      "hash": "af40a3e610ef58818d63e4fa2473536d1a39ac4a1f6378a8686682b90f86d82c",
       "target": {
         "kind": "yaml",
         "path": ".github/workflows/ci.yml",

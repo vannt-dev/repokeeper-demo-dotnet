@@ -19,7 +19,9 @@ modules:
     codeowners:
       - "@vannt-dev"
 owned: []
-stack_options: {}
+stack_options:
+  dotnet:
+    versions: [ "10.0" ]
 github:
   description: Demo .NET solution for piloting repokeeper
   topics: [ repokeeper, dotnet, demo ]
