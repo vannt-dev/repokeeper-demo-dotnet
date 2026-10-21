@@ -13,10 +13,10 @@ concurrency:
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 jobs:
   commits:
-    uses: vannt-dev/repokeeper/.github/workflows/commitlint.yml@v0
+    uses: vannt-dev/repokeeper/.github/workflows/commitlint.yml@ci/ubuntu-26-trial
   dotnet:
     uses: vannt-dev/repokeeper/.github/workflows/stack-dotnet.yml@v0
     with:
       dotnet-versions: '["8.0","9.0"]'
-      os: '["ubuntu-latest"]'
+      os: '["ubuntu-26.04"]'
       commands: '["dotnet restore","dotnet format --verify-no-changes --no-restore","dotnet build --no-restore","dotnet test --no-build"]'
