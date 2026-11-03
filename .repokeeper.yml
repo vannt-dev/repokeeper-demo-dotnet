@@ -25,7 +25,7 @@ stack_options:
     versions: [ "10.0" ]
 github:
   description: Demo .NET solution for piloting repokeeper
-  topics: [ repokeeper, dotnet, demo ]
+  topics: [ repokeeper, dotnet, demo, repokeeper-demo ]
   merge:
     squash: true
     merge_commit: false
@@ -35,4 +35,4 @@ github:
     dependabot_alerts: true
     dependabot_security_updates: true
   protect:
-    required_checks: [ "commits / commitlint", "dotnet / dotnet (ubuntu-latest)" ]
+    required_checks: [ "CI result" ]
